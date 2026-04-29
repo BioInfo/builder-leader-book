@@ -1,0 +1,70 @@
+Builder-Leader: The AI Exoskeleton That Crosses the Gap
+Copyright (c) 2026 Justin Johnson. All rights reserved.
+
+This repository contains three classes of work, licensed differently.
+
+================================================================================
+1. CODE AND SKILLS — MIT License
+================================================================================
+
+The following materials are licensed under the MIT License (below):
+
+- Everything in `.claude/skills/` (skill definitions, helper scripts).
+- Everything in `site/src/`, `site/public/`, and site configuration files.
+- `.gitignore` and any build/automation scripts in this repo.
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+2. SAMPLE PROSE AND ARTIFACTS — Creative Commons BY-NC-ND 4.0
+================================================================================
+
+The following materials are licensed under Creative Commons Attribution-
+NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0):
+
+- The preface in `chapters/_sample/00-preface.md`.
+- The typeset PDF at `export/preface-sample.pdf`.
+- All sample artifacts in `research/_samples/`, `review-work/_samples/`, and
+  `planning/_samples/`.
+- `PRODUCTION-STATS.md` and the textual content of `README.md`.
+
+You may share these works with attribution to Justin Johnson, for non-
+commercial purposes only, with no derivative works. Full license text:
+https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+================================================================================
+3. THE BOOK ITSELF — All Rights Reserved
+================================================================================
+
+The full manuscript of Builder-Leader: The AI Exoskeleton That Crosses the
+Gap, including all chapters beyond the preface, the typeset PDF and EPUB
+editions of the complete book, and the audiobook, are NOT included in this
+repository and are not licensed under the terms above.
+
+All rights to the book are reserved. To purchase the book, visit the link in
+README.md.
+
+================================================================================
+QUESTIONS
+================================================================================
+
+If you would like to use any of these materials in a way the relevant license
+does not permit, contact Justin Johnson via the channels listed in README.md.
