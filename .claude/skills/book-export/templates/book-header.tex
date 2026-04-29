@@ -1,0 +1,137 @@
+% book-header.tex — included via pandoc --include-in-header
+% For Builder-Leader: The AI Exoskeleton That Crosses the Gap
+% Typography: Iowan Old Style body, Avenir Next display, 6x9 trim
+
+% Fonts
+\setmainfont[
+  Ligatures=TeX,
+  Numbers={OldStyle,Proportional},
+  SmallCapsFeatures={LetterSpace=3.5}
+]{Iowan Old Style}
+
+\setsansfont[
+  Ligatures=TeX,
+  LetterSpace=2.0
+]{Avenir Next}
+
+% Line spacing — 11pt on 15pt leading
+\usepackage{setspace}
+\setstretch{1.18}
+
+% Microtype for professional justification
+\usepackage{microtype}
+
+% Paragraph spacing: indented paragraphs (trade book convention), no extra skip
+\setlength{\parindent}{1.25em}
+\setlength{\parskip}{0pt}
+
+% Running heads
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+% Book title for verso (small caps)
+\newcommand{\bookshorttitle}{\textsc{Builder-Leader}}
+
+% Verso (even): book title left, folio outer-left. Recto (odd): chapter title right, folio outer-right.
+% Folio always outer. DRAFT banner lives in the footer center so it never
+% collides with chapter titles on opening pages.
+\fancyhead[LE]{\small\sffamily\bookshorttitle}
+\fancyhead[RO]{\small\sffamily\itshape\leftmark}
+\fancyfoot[LE]{\small\sffamily\thepage}
+\fancyfoot[RO]{\small\sffamily\thepage}
+
+$if(draft)$
+\fancyfoot[CE,CO]{\small\sffamily\bfseries\textcolor{red!70!black}{DRAFT --- NOT FOR CIRCULATION}}
+$endif$
+
+% Chapter opening page: plain pagestyle. Folio centered at foot; DRAFT sits
+% below it so chapter titles at the top of the page are never obscured.
+\fancypagestyle{plain}{%
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \fancyfoot[C]{\small\sffamily\thepage}
+  $if(draft)$
+  \fancyfoot[LE,RO]{\small\sffamily\bfseries\textcolor{red!70!black}{DRAFT --- NOT FOR CIRCULATION}}
+  $endif$
+}
+
+% Chapter heading styling (native book class, restyled)
+\makeatletter
+\renewcommand{\@makechapterhead}[1]{%
+  \vspace*{60\p@}%
+  {\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+      \sffamily\fontsize{11pt}{13pt}\selectfont
+      \MakeUppercase{\@chapapp}\space\thechapter
+      \par\nobreak
+      \vskip 10\p@
+    \fi
+    \rule{\textwidth}{0.4pt}\par
+    \vskip 14\p@
+    \sffamily\fontsize{22pt}{26pt}\selectfont\itshape #1\par\nobreak
+    \vskip 6\p@
+    \rule{\textwidth}{0.4pt}\par
+    \vskip 48\p@
+  }}
+\renewcommand{\@makeschapterhead}[1]{%
+  \vspace*{60\p@}%
+  {\parindent \z@ \raggedright \normalfont
+    \rule{\textwidth}{0.4pt}\par
+    \vskip 14\p@
+    \sffamily\fontsize{22pt}{26pt}\selectfont\itshape #1\par\nobreak
+    \vskip 6\p@
+    \rule{\textwidth}{0.4pt}\par
+    \vskip 48\p@
+  }}
+\makeatother
+
+% Drop cap + small caps opening: wrap first paragraph manually with \dropcap{T}{HREE WORDS}
+% Usage in markdown: insert a raw latex block at the start of a chapter's first paragraph if desired.
+\newcommand{\dropcap}[2]{%
+  \noindent%
+  {\fontsize{42pt}{42pt}\selectfont\raisebox{-0.35\baselineskip}[0pt][0pt]{#1}}%
+  \kern2pt\textsc{#2}\space%
+}
+
+% Pull quote environment — triggered by pandoc fenced div ::: pullquote
+\newenvironment{pullquote}{%
+  \vspace{1.2em}%
+  \par\noindent\hspace*{0.05\textwidth}%
+  \begin{minipage}{0.9\textwidth}%
+    \centering%
+    \rule{0.3\textwidth}{0.4pt}\par\vspace{0.8em}%
+    \itshape\fontsize{13pt}{18pt}\selectfont%
+}{%
+    \par\vspace{0.8em}%
+    \rule{0.3\textwidth}{0.4pt}%
+  \end{minipage}%
+  \par\vspace{1.2em}%
+}
+
+% Block quote: slightly smaller, indented both sides
+\renewenvironment{quote}%
+  {\list{}{\leftmargin=2em\rightmargin=2em\topsep=0.5em}%
+   \item\relax\fontsize{10.5pt}{14pt}\selectfont}%
+  {\endlist}
+
+% Section-break horizontal rule: pandoc renders `---` using its default.
+% Leave \rule alone (it is a core LaTeX primitive used by fancyhdr and others).
+% Future enhancement: a pandoc Lua filter can replace HorizontalRule with a diamond glyph.
+
+% Hyperref — plain black, no colored link boxes in print
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=black,
+  citecolor=black,
+  urlcolor=black,
+  pdftitle={Builder-Leader: The AI Exoskeleton That Crosses the Gap},
+  pdfauthor={Justin Johnson}
+}
+
+% Widow and orphan suppression
+\widowpenalty=10000
+\clubpenalty=10000
+\raggedbottom

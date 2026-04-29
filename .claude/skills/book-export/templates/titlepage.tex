@@ -1,0 +1,56 @@
+% titlepage.tex — included via pandoc --include-before-body
+% Half-title, title, copyright, dedication.
+
+\begin{titlepage}
+\thispagestyle{empty}
+\begin{center}
+\vspace*{2.2in}
+
+$if(draft)$
+{\sffamily\bfseries\fontsize{16pt}{18pt}\selectfont\color{red!70!black} DRAFT --- NOT FOR CIRCULATION}\par
+\vspace{0.5in}
+$endif$
+
+{\sffamily\fontsize{34pt}{38pt}\selectfont\itshape Builder-Leader}\par
+\vspace{0.25in}
+{\sffamily\fontsize{16pt}{20pt}\selectfont The AI Exoskeleton That Crosses the Gap}\par
+
+\vfill
+
+{\sffamily\fontsize{14pt}{16pt}\selectfont Justin Johnson}\par
+\vspace{0.5in}
+
+$if(draft)$
+{\small\sffamily\color{black!60} Manuscript in progress --- $builddate$}\par
+$endif$
+
+\end{center}
+\end{titlepage}
+
+% Copyright page (title-page verso)
+\thispagestyle{empty}
+\null\vfill
+\noindent
+\begin{small}
+\textit{Builder-Leader: The AI Exoskeleton That Crosses the Gap}\par
+\vspace{0.5em}
+Copyright \copyright\ 2026 Justin Johnson. All rights reserved.\par
+\vspace{0.5em}
+No part of this manuscript may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the author, except for brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.\par
+\vspace{0.5em}
+Working title; subject to change.\par
+$if(draft)$
+\vspace{1em}
+\textbf{This is a draft. Not for circulation, redistribution, or public reference.}\par
+$endif$
+\end{small}
+\vspace{1in}
+\clearpage
+
+% Dedication page (placeholder)
+\thispagestyle{empty}
+\null\vspace*{2in}
+\begin{center}
+\textit{For the ones crossing.}
+\end{center}
+\clearpage
