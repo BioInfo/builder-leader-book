@@ -30,7 +30,7 @@ The compounding move isn't from one archetype to another. It's deepening the sam
 
 Write down where you are, where you want to be in twelve months, and the one operating habit that closes the gap. One sentence.
 
-## Checkpoint 3 — The Pascal-type recognition question
+## Checkpoint 3 — The Fortune 500 CEO recognition question
 
 The book describes a recognition pattern that operators report: a moment when someone you've crossed with — a peer, a direct report, a person you mentored — names what's changed in the practice without prompting. Not "you've been using AI a lot." A specific recognition of the operator stance itself.
 

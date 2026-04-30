@@ -44,6 +44,7 @@ NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0):
 - The typeset PDF at `export/preface-sample.pdf`.
 - All sample artifacts in `research/_samples/`, `review-work/_samples/`, and
   `planning/_samples/`.
+- The full Field Guide at `field-guide/` (all chapters).
 - `PRODUCTION-STATS.md` and the textual content of `README.md`.
 
 You may share these works with attribution to Justin Johnson, for non-

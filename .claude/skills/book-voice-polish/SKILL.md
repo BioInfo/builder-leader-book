@@ -206,6 +206,6 @@ When running with identifier `all`:
 
 ## Why this exists separately from `book-draft-chapter`'s post-draft scan
 
-`book-draft-chapter` runs the scan against a fresh draft, where most violations are first-pass LLM patterns. After Stage 2 (red team), Stage 3 (fact-check), Stage 4 (adversarial reader + convergence + Pascal rename + holistic naming sweep), the chapters have been edited many times. New violations get introduced during revisions. Old ones get re-introduced when paragraphs are reworked. The Stage 5 sweep is the one that catches what accumulated through revision.
+`book-draft-chapter` runs the scan against a fresh draft, where most violations are first-pass LLM patterns. After Stage 2 (red team), Stage 3 (fact-check), Stage 4 (adversarial reader + convergence + persona rename + holistic naming sweep), the chapters have been edited many times. New violations get introduced during revisions. Old ones get re-introduced when paragraphs are reworked. The Stage 5 sweep is the one that catches what accumulated through revision.
 
 This is also the first pass that runs the mechanical scanner script. The post-draft scan in `book-draft-chapter` is judgment-only; this skill grounds the judgment in deterministic findings so no banned-word slip can hide.
