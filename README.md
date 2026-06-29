@@ -86,6 +86,15 @@ The skills in `.claude/skills/` are project-local Claude Code skills, built and 
 
 What they cover: three-tier research sweeps, draft generation grounded in canon, structural and adversarial critique (Stage 2 + Stage 6), fact-check assertion registries, multi-persona reader simulation, mechanical voice polish, manuscript export, audiobook generation.
 
+## The book in action
+
+The book argues for running Claude Code as a persistent system (skills, hooks, memory, a self-correction loop, multi-provider routing), not a chat box you visit. Two open-source repos put that whole system in the open, well beyond the three skills showcased here:
+
+- **[Claudelicious](https://github.com/BioInfo/claudelicious)**: a cookbook for running Claude Code as a system, not a chat box. The why and the wiring behind a full harness, written up to copy and adapt.
+- **[Slopless](https://github.com/BioInfo/slopless)**: the author's real production Claude Code config, 18 months and 50+ projects, sanitized. Every rule earned the hard way.
+
+The book makes the case; these two repos are the working setup behind it.
+
 ## Author
 
 **Justin Johnson** — built and led an AI Center of Excellence at a Fortune 500 pharmaceutical company, and now leads Applied Data and AI in R&D at an AI-driven biotech. He writes [Run Data Run](https://rundatarun.io) and the AIXplore technical blog.
