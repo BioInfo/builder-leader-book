@@ -12,7 +12,7 @@ SINCE=$(date -v-90d +%Y-%m-%d)
 DIR="${BOOK_ROOT:-$PWD}/research/${SLUG}/_raw-discovery"
 mkdir -p "$DIR"
 
-GEM=$(security find-generic-password -s 'GEMINI_KEY' -w 2>/dev/null || $SECRET_gemini | head -1)
+GEM="${GEMINI_API_KEY:?set GEMINI_API_KEY in your environment}"
 
 RECENCY_PREAMBLE="TODAY'S DATE IS ${DATE}. Your knowledge cutoff is irrelevant. Use live web search to find ONLY items dated after ${SINCE} (last 90 days). Reject and DO NOT include any item dated before ${SINCE}. If you cannot find recent items in some category, say so explicitly rather than substituting older ones. Cite the publication date next to every item."
 RECENCY_REMINDER="REMINDER: Today is ${DATE}. Reject anything dated before ${SINCE}. Every item must have a date and that date must be after ${SINCE}."

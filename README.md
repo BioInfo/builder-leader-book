@@ -8,8 +8,7 @@
 
 A nonfiction book by **Justin Johnson** on what knowledge work looks like when a senior leader operates through a persistent, multi-agent harness instead of a chat session.
 
-[![Reserve your copy](https://img.shields.io/badge/Reserve%20your%20copy-builder--leader.com-f97316?style=for-the-badge)](https://builder-leader.com/#preorder-form)
-[![Vote on the cover](https://img.shields.io/badge/Vote%20on%20the%20cover-Win%20a%20signed%20copy-09090b?style=for-the-badge)](https://builder-leader.com/vote)
+[![Get it on Amazon](https://img.shields.io/badge/Get%20it%20on%20Amazon-On%20sale%20now-f97316?style=for-the-badge)](https://www.amazon.com/dp/B0H3LQQ4J6)
 [![Read the preface](https://img.shields.io/badge/Read%20the%20preface-PDF%20%2B%20markdown-fafafa?style=for-the-badge&labelColor=09090b)](export/preface-sample.pdf)
 
 [![Site](https://img.shields.io/badge/site-builder--leader.com-09090b?style=flat-square)](https://builder-leader.com)
@@ -30,9 +29,9 @@ It exists to demonstrate three things, and only three things:
 
 1. **The book is rigorous.** Visible production scaffolding (research artifacts, multi-stage critique, fact-check registries, voice polish) shows the work was built carefully, not generated.
 2. **The framework is real and reusable.** The Claude Code skills used to draft, critique, fact-check, and ship the manuscript are checked in. Clone them, point them at your own writing.
-3. **The book is worth reserving.** The preface is here in full. The remaining ten chapters are gated.
+3. **The book is out.** The preface is here in full; the remaining ten chapters are in the book.
 
-Reserve a copy at **[builder-leader.com](https://builder-leader.com/#preorder-form)** — emails go to the author directly, no newsletter, no spam.
+Get it on Amazon: **[amazon.com/dp/B0H3LQQ4J6](https://www.amazon.com/dp/B0H3LQQ4J6)**. More at **[builder-leader.com](https://builder-leader.com)**.
 
 ## The production pipeline
 
@@ -87,15 +86,9 @@ The skills in `.claude/skills/` are project-local Claude Code skills, built and 
 
 What they cover: three-tier research sweeps, draft generation grounded in canon, structural and adversarial critique (Stage 2 + Stage 6), fact-check assertion registries, multi-persona reader simulation, mechanical voice polish, manuscript export, audiobook generation.
 
-## Vote on the cover
-
-The book is not yet typeset — there are ten cover candidates in the running. **One voter, drawn at random from those who picked the winning cover, gets a free signed first-edition hardcover when the book ships.** One vote per email.
-
-→ **[Vote at builder-leader.com/vote](https://builder-leader.com/vote)**
-
 ## Author
 
-**Justin Johnson** — twelve years building production AI systems for drug discovery and biopharma research. Currently leading an enterprise AI Centre of Excellence in Oncology R&D. Writes [Run Data Run](https://rundatarun.io) (1,000+ subscribers).
+**Justin Johnson** — built and led an AI Center of Excellence at a Fortune 500 pharmaceutical company, and now leads Applied Data and AI in R&D at an AI-driven biotech. He writes [Run Data Run](https://rundatarun.io) and the AIXplore technical blog.
 
 - Site: [builder-leader.com](https://builder-leader.com)
 - Substack: [Run Data Run](https://rundatarun.io)

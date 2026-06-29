@@ -33,7 +33,7 @@ research/NN-<slug>/
 │   ├── perplexity-discovery-<date>.md    ("surprise me, don't confirm thesis")
 │   ├── gemini-discovery-<date>.md        (same prompt, Gemini 3 Flash Preview)
 │   ├── x-grok-discovery-<date>.md        (same prompt, Grok x_search)
-│   ├── fetched/                          ← Firecrawl DGX body extraction
+│   ├── fetched/                          ← Firecrawl (self-hosted) body extraction
 │   │   └── <hash>.md                     (one file per cited URL, cleaned markdown)
 │   ├── url-summaries/                    ← Per-URL sub-summaries (Gemini 3 Flash bulk)
 │   │   └── <hash>.md                     (Source identity / Central claim / Key quotes / Named anchors / Stance / Usefulness tags / Caveats)
@@ -65,7 +65,7 @@ All scripts live in `.claude/skills/book-platform-sweep/scripts/` and are idempo
 | `gemini-sweep.sh <slug> <query>` | 1 | Gemini 3 Flash Preview with `google_search` grounding |
 | `substack-pool.sh` | 1 shared | Direct Substack `/api/v1/archive` + `/posts/by-id/` — all named voices |
 | `discovery-sweep.sh <slug> <prompt>` | 2 | Open-ended "surprise me" Perplexity + Gemini + Grok in one shot |
-| `fetch-discovery-urls.sh <slug>` | 2 | Firecrawl on DGX (http://REDACTED-HOST:3333) — one fetch per unique cited URL |
+| `fetch-discovery-urls.sh <slug>` | 2 | Firecrawl (self-hosted) — one fetch per unique cited URL |
 | `url-summarize.sh <slug>` | 2 | Gemini 3 Flash Preview — 150-word summary per fetched URL body |
 | `synth-chapter.sh <slug>` | 3 quick-pass | Single Gemini 3 Flash Preview pass over all discovery bodies (legacy / spot-check only) |
 
@@ -98,25 +98,25 @@ If pre-floor dates appear, rename to `<platform>-discovery-stale-<DATE>.md` and 
 
 ## Prerequisites
 
-All keys in `pass`:
+API keys for the three search providers, supplied however your environment manages secrets (env vars, a password manager, or your OS keychain). The scripts read them from the environment:
 
 ```bash
-$SECRET_perplexity
-$SECRET_xai
-# Gemini: macOS Keychain `GEMINI_KEY` (NOT pass)
-security find-generic-password -s 'GEMINI_KEY' -w
+PERPLEXITY_API_KEY=...
+XAI_API_KEY=...
+GEMINI_API_KEY=...
 ```
 
-Firecrawl must be up on DGX:
+A self-hosted Firecrawl instance for body extraction. Point the scripts at your own host:
 
 ```bash
-curl -s -o /dev/null -w "%{http_code}\n" -X POST http://REDACTED-HOST:3333/v1/scrape \
+FIRECRAWL_URL=http://<your-firecrawl-host>:3333
+curl -s -o /dev/null -w "%{http_code}\n" -X POST "$FIRECRAWL_URL/v1/scrape" \
   -H 'Content-Type: application/json' \
   -d '{"url":"https://example.com","formats":["markdown"]}'
 # Expected: 200
 ```
 
-If firecrawl is down, Justin usually starts it manually via the DGX Docker stack. Ask him rather than guessing at the right systemd / docker-compose command.
+If Firecrawl is down, restart your self-hosted instance.
 
 ## Procedure
 
@@ -327,7 +327,7 @@ Per full-book pass (10 chapters) roughly:
 - Gemini 3 Flash Preview: ~250 calls (10 × gemini-sweep + 10 × gemini-discovery + 220 × url-summarize + 10 × synth-chapter spot checks), ~$2
 - xAI Grok x_search: ~20 calls, ~$0.10
 - HN Algolia + Reddit JSON: free
-- Firecrawl DGX: free (self-hosted)
+- Firecrawl (self-hosted): free
 - Hybrid subagent synthesis: 10 Pass A runs on Sonnet (~$2-5 total) + 10 Pass B runs on Opus (~$15-30 total). Pass B is the highest-leverage dollar in the whole pipeline.
 
 Budget ~$15-25 per full-book pass + the opus-subagent cost on top. One pass per 4-6 weeks of manuscript work should be the cadence.
