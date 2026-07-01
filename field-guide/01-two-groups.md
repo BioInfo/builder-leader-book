@@ -35,3 +35,7 @@ If your Section B sums to 8 or higher, you're already on the other side. The res
 If you're in the gap and you read nothing else from this guide:
 
 Install Claude Code today. Run it once on a real piece of your own work — not a tutorial repo, not a sandbox. The chapter you read next will have stronger purchase if your hands have touched the tool first.
+
+---
+
+*Prefer to run this in a browser? The interactive version, with the scorecard as a live widget, is [Part 1 on AIXplore](https://ai.rundatarun.io/ai-development-agents/field-guide-01-which-side-of-the-gap).*

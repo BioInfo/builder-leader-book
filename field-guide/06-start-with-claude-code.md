@@ -49,3 +49,7 @@ Time: ten minutes. Success criterion: a guardrail exists that wasn't there befor
 ## After
 
 By the end of week two, you have installed Claude Code, bootstrapped from a starter, rewritten a real artifact, written a skill you use, and written a guardrail that fires. That's the on-ramp. Field Guide 07 is what you do for the next month.
+
+---
+
+*Prefer to run this in a browser? The interactive version, with the five-step tracker as a live widget, is [Part 6 on AIXplore](https://ai.rundatarun.io/ai-development-agents/field-guide-06-your-first-saturday).*

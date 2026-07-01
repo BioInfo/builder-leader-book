@@ -40,3 +40,7 @@ Write the decision and the alternate version side by side. Not what you wish had
 ## After
 
 The artifact this exercise produces — pilot ratio, myth identified, one re-decided decision — is the start of an honest conversation with your peer leadership group. The chapter argues you can't lead what you've never worn. This is the evidence.
+
+---
+
+*Prefer to run this in a browser? The interactive version, with the pilot-ratio calculator as a live widget, is [Part 3 on AIXplore](https://ai.rundatarun.io/ai-development-agents/field-guide-03-run-the-pilot-numbers).*

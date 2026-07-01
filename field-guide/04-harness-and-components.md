@@ -46,3 +46,7 @@ Write the name of the component and the specific thing. One line each. That line
 ## After
 
 The inventory is a baseline. Next month's exercise (Field Guide 07) builds on this directly. Bring the list to your week-one Claude Code session.
+
+---
+
+*Prefer to run this in a browser? The interactive version, with the six-slot inventory as a live widget, is [Part 4 on AIXplore](https://ai.rundatarun.io/ai-development-agents/field-guide-04-inventory-your-harness).*

@@ -43,3 +43,9 @@ If not: the practice may be private. Bring it forward in the next quarter. Teach
 ## After
 
 The checkpoints are quarterly. Set a recurring calendar entry now. The book's job ends here. Yours doesn't.
+
+---
+
+*Prefer to run this in a browser? The interactive version, with the archetype audit as a live widget, is [Part 9 on AIXplore](https://ai.rundatarun.io/ai-development-agents/field-guide-09-leading-from-the-other-side).*
+
+*That's the whole series. The standalone AIXplore write-up of how the book itself was produced is [The Harness That Wrote the Book](https://ai.rundatarun.io/ai-development-agents/the-harness-that-wrote-the-book).*

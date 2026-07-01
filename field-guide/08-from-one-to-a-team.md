@@ -41,3 +41,7 @@ Success criterion: the decision is written down with its evidence. Whatever you 
 ## After
 
 Weeks six through ten are the inflection point most organizations rush. Field Guide 09 is the last of the practical chapters: what it looks like to lead with this practice as a permanent part of your role.
+
+---
+
+*Prefer to run this in a browser? The interactive version, with the two-operator readiness check as a live widget, is [Part 8 on AIXplore](https://ai.rundatarun.io/ai-development-agents/field-guide-08-one-operator-to-a-team).*

@@ -35,3 +35,7 @@ Name three people in your organization who fit Group 3. Write down what they've 
 ## After
 
 Bring the three lists to your next 1:1 with a senior peer. The conversation that opens up is the one the chapter is trying to start.
+
+---
+
+*Prefer to run this in a browser? The interactive version, with the tier-and-failure tuner as a live widget, is [Part 2 on AIXplore](https://ai.rundatarun.io/ai-development-agents/field-guide-02-hear-the-three-tiers).*

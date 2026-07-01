@@ -40,3 +40,7 @@ Examples readers commonly land on:
 - "I'll spend Friday afternoons coaching the agents I've spawned, the same way I coach my team on Thursdays."
 
 That sentence is your starting position for the next chapter, where the work begins.
+
+---
+
+*Prefer to run this in a browser? The interactive version, with the five-primitives mirror as a live widget, is [Part 5 on AIXplore](https://ai.rundatarun.io/ai-development-agents/field-guide-05-five-primitives-transfer).*

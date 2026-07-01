@@ -41,3 +41,7 @@ Success criterion: the work shipped, and at least one downstream person responde
 ## After
 
 At week six you have a harness with skills, memory, an agent, and one shipped artifact. That's enough to keep going for several months without architectural change. The next chapter is what happens when a second person joins you.
+
+---
+
+*Prefer to run this in a browser? The interactive version, with the six-week ladder as a live widget, is [Part 7 on AIXplore](https://ai.rundatarun.io/ai-development-agents/field-guide-07-build-the-harness-out).*
